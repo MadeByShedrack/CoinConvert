@@ -12,7 +12,7 @@ class CoinConvert extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "CoinConvert",
+      title: "Buy Coins",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
