@@ -1,9 +1,10 @@
+// ignore_for_file: prefer_const_constructors
+
+import 'package:coin_convert/screens/coin_screen.dart';
 import 'package:flutter/material.dart';
 
-import 'coin_page.dart';
-
 void main() {
-  runApp(const CoinConvert());
+  runApp(CoinConvert());
 }
 
 class CoinConvert extends StatelessWidget {
@@ -12,16 +13,13 @@ class CoinConvert extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Buy Coins",
+      title: "Coin Convert",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
         visualDensity: VisualDensity.adaptivePlatformDensity,
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.deepPurpleAccent.shade700,
-        ),
       ),
-      home: const CoinPage(),
+      home: CoinScreen(),
     );
   }
 }
